@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ebmedded AR.js Experience through echoAR</title>
+        <title>Harry Potter AR Experience through echoAR</title>
         <style>
             #background {
                 top: 0;
@@ -16,24 +16,56 @@
                 position: relative;
                 color: rgb(248,213,0);
                 text-align: center;
-                font-size: 5vh;
-                    font-family: "Comic Sans MS", cursive, sans-serif;
+                font-size: 4vh;
+		            font-family: "Comic Sans MS", cursive, sans-serif;
                 margin-top: 0;
             }
             iframe {
                 position: relative;
                 width: 100%;
-                height: 75vh;
+                height: 65vh;
+            }
+            #logo {
+                display: block;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #glassesButton {
+                display: block;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #A93226;
+                color: rgb(248,213,0);
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                border: 2px solid rgb(248,213,0);
+                margin-bottom: 8px;
             }
         </style>
     </head>
     <body>
-        <div id="background"></div>
-        <img src = "harry-potter-logo.jpg"
-             alt="Harry Potter Logo" style="display:block;width:50%;margin-left:auto;margin-right:auto;">
+	    <div id="background"></div>
+        <img id="logo" src="harry-potter-logo.jpg"
+             alt="Harry Potter Logo">
         <h1>Harry Potter Glasses in AR</h1>
-        <iframe src="https://console.echoAR.xyz/arjs?key=<YOUR_API_KEY>&entry=<ENTRY-ID>"
-                allow="camera *">
+
+        <button id="glassesButton">
+          Tap to activate/deactivate camera
+        </button>
+        <iframe id="glasses" allow="camera *">
         </iframe>
+      
+      <script>
+        document.getElementById("glassesButton").onclick = function() {
+          var glasses = document.getElementById('glasses');
+          if(glasses.hasAttribute("src")){
+            glasses.removeAttribute("src");
+          }else{
+            glasses.src = 'https://console.echoAR.xyz/arjs?key=<YOUR_API_KEY>&entry=<ENTRY-ID>';
+          }
+        }
+      </script>
+
     </body>
 </html>
