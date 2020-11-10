@@ -18,13 +18,6 @@ Open *index.html* locally on a server like MAMP or simply import *index.html* in
  * When you use browser to try the demo make sure you use HTTPS to avoid any problem on camera accessibility. 
  * Loading Complex model or loading models the first time may take 5-10 seconds to render. Please be patient.
 
-
-## Learn more
-Refer to our [documentation](https://docs.echoar.xyz/ar.js/embed-into-website-or-app) to learn more about how to embed echoAR with an iframe.
-
-## Support
-Feel free to reach out at [support@echoAR.xyz](mailto:support@echoAR.xyz) or join our [support channel on Slack](https://join.slack.com/t/echoar/shared_invite/enQtNTg4NjI5NjM3OTc1LWU1M2M2MTNlNTM3NGY1YTUxYmY3ZDNjNTc3YjA5M2QyNGZiOTgzMjVmZWZmZmFjNGJjYTcxZjhhNzk3YjNhNjE). 
-
 ## Screenshots
 ![ARjs website screenshot](/images/screenshot1.png)
 ![echoAR console screenshot](/images/screenshot2.png)
