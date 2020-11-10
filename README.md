@@ -1,9 +1,6 @@
 # AR.js-echoAR-demo-Harry-Potter
 Simple web based AR experience with 3D model.
 
-## Register
-Don't have an API key? Make sure to register for FREE at [echoAR](https://console.echoar.xyz/#/auth/register).
-
 ## Setup
 * [Add the 3D model](https://docs.echoar.xyz/quickstart/add-a-3d-model) *Harry_Potter.zip* from the [assets](https://github.com/ryanrx/AR.js-echoAR-demo-Harry-Potter/tree/master/assets) folder to the console. 
 * [Add the image](https://docs.echoar.xyz/ar.js/deploy-experience#image-target) *Harry_Potter.jpg* from the [assets](https://github.com/ryanrx/AR.js-echoAR-demo-Harry-Potter/tree/master/assets) folder as the image target for the model.
